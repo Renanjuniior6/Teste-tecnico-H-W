@@ -194,34 +194,3 @@
       flex-direction: column;
    }
 }
-
-@media (min-width: 1400px) {
-  .grid-text {
-    width: 28.5rem;
-    gap: 0.875rem;
-  }
-
-}
-
-@media (min-width: 1200px) {
-  #grid {
-    flex-direction: column;
-    height: 145%;
-  }
-
-  .grid-text {
-    width: 55.5rem;
-    gap: 0;
-  }
-
-  .grid-text h1 {
-    width: 55.5rem;
-    gap: 0;
-    text-align: center;
-  }
-
-  .grid-btn {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
