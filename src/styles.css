@@ -208,6 +208,10 @@ form {
 
 /*         About            */
 
+.about-section {
+    height: 100%;
+}
+
 #about {
     width: 100%;
     height: 90%;
@@ -521,8 +525,6 @@ ul{
 }
 }
 
-
-
 /* 📱 Para celulares pequenos */
 @media (max-width: 480px) {
 
@@ -708,22 +710,91 @@ ul{
 
 }
 
-/* 📱 Para celulares médios */
-@media (max-width: 767px) {
-    
-}
-
-/* 💻 Para tablets */
-@media (max-width: 991px) {
-    
-}
-
 /* 🖥️ Para desktops pequenos */
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
+
+    #content {
+        height: 131%;
+    }
+
+    .about-section {
+        height: 100%;
+    }
+
+    .hero {
+        width: 91%;
+        top: 21%;
+        left: 5%;
+    }
+
+    .blue-box {
+        height: 500px;
+        width: 500px;
+        left: 12%;
+        top: 29%;
+    }
+
+    .red-box {
+        height: 33.563rem;
+        width: 44.313rem;
+        margin-left: 26.5rem;
+        margin-bottom: 10%;
+        margin-top: 130px;
+    }
+
+    .red-box span {
+        height: 400px;
+        width: 400px;
+        margin-left: 17.5rem;
+        margin-bottom: 20%;
+        margin-top: 10px;
+    }
+
+    .countdown-container {
+        height: 115%;
+    }
+
+    .countdown-box {
+        width: 75%;
+    }
     
 }
+
 
 /* 🖥️ Para desktops grandes */
 @media (min-width: 1400px) {
+
+    #content {
+        height: 115%;
+    }
+
+    .about-section {
+        height: 100%;
+    }
+
+    .countdown-container {
+        height: 105%;
     
+    }
+
+    .red-box {
+        height: 36.563rem;
+        width: 53.313rem;
+        margin-left: 25.5rem;
+        margin-bottom: 10%;
+    }
+
+    .blue-box {
+        height: 40.813rem;
+        width: 31.438rem;
+        position: absolute;
+        bottom: 5%;
+        left: 13%;
+    }
+
+    .hero {
+        width: 82%;
+        top: 21%;
+        left: 10%;
+    }
 }
