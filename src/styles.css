@@ -94,7 +94,7 @@ form {
 
 .navbar-brand {
     font-weight: 700;
-    background: linear-gradient(295deg, rgba(245,203,140,1) 14%, rgba(126,89,54,1) 95%) !important;
+    background: linear-gradient(295deg, #f5cb8c 14%, #7e5936 95%) !important;
     padding: 0.313rem;
     border-radius: 0.313rem;
     color: #fff !important;
