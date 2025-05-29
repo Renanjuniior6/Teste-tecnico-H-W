@@ -12,7 +12,7 @@
 }
 
 .grid-btn {
-	width: 45%;
+	max-width: 46%;
 	display: inline-block;
 	margin-top: 0.625rem;
 	padding: 0.625rem 1.25rem;
@@ -30,7 +30,7 @@
 }
 
 .grid-text {
-	width: 37.5rem;
+	max-width: 35%;
 	padding: 1.875rem;
 	display: flex;
 	flex-direction: column;
@@ -44,7 +44,7 @@
 .thumbs {
 	max-width: 100%;
 	display: grid;
-	grid-template-columns: repeat(4, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	/* gap: 1.25rem; */
 }
 .thumbs > a {
@@ -193,3 +193,26 @@
 		flex-direction: column;
 	}
 }
+
+
+  
+/* 2 colunas para tablets e telas médias */
+@media (min-width: 600px) and (max-width: 899px) {
+	.thumbs {
+	grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* 3 colunas para telas médias a grandes */
+@media (min-width: 900px) and (max-width: 1023px) {
+	.thumbs {
+	  grid-template-columns: repeat(3, 1fr);
+	}
+  }
+
+  /* 4 colunas para telas grandes (desktop) */
+  @media (min-width: 1024px) {
+	.thumbs {
+	  grid-template-columns: repeat(4, 1fr);
+	}
+  }
