@@ -212,34 +212,45 @@ form {
 
 /*         About            */
 
-.about-section {
-	height: 100%;
+#about-section {
+	height: 89%;
 }
 
 #about {
-	width: 100%;
-	height: 90%;
+	/* width: 100%;
+	height: 90%; */
 	display: flex;
-	position: relative;
+	/* position: relative; */
 	display: flex;
 	align-items: center;
 	padding: 1.25rem;
 	margin-top: 0.313rem;
 }
 
+.about-text {
+	background-color: aliceblue;
+	display: flex;
+	width: 43%;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	padding: 40px;
+	border-radius: 0.313rem;
+	gap: 1rem;
+}
+
 .about-title {
 	text-align: center;
 	margin-top: 2%;
+	margin-bottom: 3%;
 	font-weight: 600;
 	color: #fff;
-	margin-bottom: 3%;
 	text-shadow: 2px 1px 1px #000;
 }
 
 .about-btn {
 	width: 45%;
 	display: inline-block;
-	margin-top: 0.625rem;
 	padding: 0.625rem 1.25rem;
 	background: transparent;
 	color: #000;
@@ -255,41 +266,34 @@ form {
 }
 
 .blue-box {
-	height: 40.813rem;
-	width: 31.438rem;
-	position: absolute;
-	bottom: 5%;
-	left: 20%;
+	height: 100%;
+    max-width: 35%;
+	margin-left: 35px;
+    margin-top: 110px;
 	object-fit: cover;
 	border-radius: 0.313rem;
 }
 
 .red-box {
-	background-color: aliceblue;
 	height: 36.563rem;
-	width: 53.313rem;
-	margin-left: 37.5rem;
-	margin-bottom: 10%;
+	max-width: 80%;
+	/* margin-left: 37.5rem;
+	margin-bottom: 10%; */
 	border-radius: 5px;
+	margin-left: auto;
+	display: flex;
 }
 
 .red-box h1 {
 	color: #000;
-	font-size: 4.5rem;
-	margin-bottom: 2.188rem;
+	font-size: 4.5em;
 }
 
 .red-box p {
 	color: #000;
+	text-align: left;
 }
 
-.red-box span {
-	width: 60%;
-	display: flex;
-	flex-direction: column;
-	margin-left: 18.75rem;
-	margin-top: 6.25rem;
-}
 
 /*         testimonials            */
 
@@ -587,8 +591,9 @@ ul {
 	.red-box {
 		height: 20.875rem;
 		width: 23.25rem;
-		margin-left: -3%;
-		margin-bottom: 73%;
+		/* margin-left: -3%;
+		margin-bottom: 73%; */
+		margin: auto;
 	}
 
 	.blue-box {
