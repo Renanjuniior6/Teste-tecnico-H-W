@@ -31,6 +31,7 @@
 
 .grid-text {
 	max-width: 35%;
+	height: 34.0625rem;
 	padding: 1.875rem;
 	display: flex;
 	flex-direction: column;
@@ -45,7 +46,7 @@
 	max-width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	/* gap: 1.25rem; */
+	gap: 1.25rem;
 }
 .thumbs > a {
 	max-width: 9.375rem;
@@ -214,5 +215,22 @@
   @media (min-width: 1024px) {
 	.thumbs {
 	  grid-template-columns: repeat(4, 1fr);
+	  margin-right: 2%;
+	}
+
+	.grid-text {
+		margin-left: 2%;
+	}
+
+	.grid-text P {
+		margin-bottom: 0;
 	}
   }
+
+  /* @media (min-width: 1165px) {
+	
+
+	.grid-btn {
+
+	}
+  } */
