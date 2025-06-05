@@ -42,6 +42,10 @@
 	background-color: #fff;
 }
 
+.grid-text > p {
+	margin-bottom: 0;
+}
+
 .thumbs {
 	max-width: 100%;
 	display: grid;
@@ -215,17 +219,14 @@
 		margin-left: 2%;
 	}
 
-	.grid-text p {
-		margin-bottom: 0;
-	}
-
   }
 
-  @media (min-width: 900px) and (max-width: 1126px) {
+  @media (max-width: 1126px) {
 	
 	.grid-text {
 		height: 90%;
 		gap: 3.875rem;
+		max-width: 38%;
 	}
 
 	.thumbs {
@@ -243,3 +244,77 @@
 	
   }
 
+  @media (max-width: 1023px) {
+
+	.grid-text {
+		height: 84%;
+	}
+
+	#grid {
+		gap: 0.5rem;
+	}
+
+	#grid {
+		gap: 1.5rem;
+	}
+
+	.about-text {
+		max-width: 54%;
+	  }
+
+	.grid-btn {
+		margin-top: 0;
+		gap: 2.875rem;
+	}
+
+	.thumbs {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.25rem;
+	  }
+	
+  }
+
+  @media (max-width: 1005px) {
+
+	.grid-text h1 {
+		width: 101%;
+	}
+
+	.about-text {
+		max-width: 56%;
+	}
+
+	.grid-text {
+		max-width: 40%;
+	}
+
+	#grid {
+		gap: 0.5rem;
+	}
+
+  }
+
+  @media (max-width: 930px) {
+
+	.red-box {
+		max-width: 88%;
+		margin-left: 5%;
+	}
+
+	.blue-box {
+		max-width: 47%;
+	}
+
+	.about-text {
+		max-width: 66%;
+	}
+
+	.red-box h1 {
+		font-size: 4em;
+	}
+
+	.countdown-box {
+		max-width: 95%;
+	}
+
+  }

@@ -717,11 +717,38 @@ ul {
 
 }
 
-@media (min-width: 900px) and (max-width: 1360px) {
+  @media (max-width: 1126px) {
+
+	  .about-text {
+		max-width: 52%;
+	  }
+
+	  .blue-box {
+		max-width: 40%;
+		margin-left: 0;
+	  }
+	
+  }
+
+@media (max-width: 1360px) {
 	
 	.countdown-box {
 		max-width: 85%;
 	}
+
+	.swiper2 {
+		width: 84%;
+	  }
+
+	  .hero {
+		max-width: 96%;
+		top: 24%;
+    	left: 2%;
+	  }
+
+	  .hero h1 {
+		font-size: 4em;
+	  }
 	
   }
 
