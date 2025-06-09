@@ -128,7 +128,7 @@ form {
 	color: white;
 	position: absolute;
 	top: 26%;
-	left: 18%;
+	left: 15%;
 	z-index: 99;
 }
 
@@ -750,6 +750,13 @@ ul {
 		font-size: 4em;
 	  }
 	
+  }
+
+  @media (max-width: 1700px) {
+	.hero {
+			max-width: 96%;
+			left: 2%;
+	}
   }
 
   
