@@ -40,6 +40,7 @@
 	border-radius: 10px;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 	background-color: #fff;
+	margin-left: 2%;
 }
 
 .grid-text > p {
@@ -49,7 +50,9 @@
 .thumbs {
 	max-width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+	grid-template-columns: repeat(4, 1fr);
+	margin-right: 2%;
 	gap: 1.25rem;
 }
 .thumbs > a {
@@ -159,11 +162,17 @@
 	top: 0.625rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* RESPONSIVIDADE */
 
-/* 📱 Para celulares médios */
+@media (max-width: 375px) {
+	#grid {
+		height: 270%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
 @media (max-width: 480px) {
-	/* ///////// Grid de Produtos ///////// */
 
 	.thumbs {
 		grid-template-columns: repeat(2, minmax(10.625rem, 1fr));
@@ -190,61 +199,32 @@
 	}
 }
 
-/* 📱 Para celulares médios */
-@media (max-width: 375px) {
-	#grid {
-		height: 270%;
-		display: flex;
-		flex-direction: column;
-	}
-}
-
-
-  
-/* 2 colunas para tablets e telas médias */
 @media (min-width: 600px) and (max-width: 899px) {
 	.thumbs {
-	grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		}
+}
+
+@media (max-width: 930px) {
+
+}
+
+@media (max-width: 1005px) {
+
+	.grid-text h1 {
+		width: 101%;
+	}
+
+	.grid-text {
+		max-width: 40%;
+	}
+
+	#grid {
+		gap: 0.5rem;
 	}
 }
 
-/* 4 colunas para telas grandes (desktop) */
-@media (min-width: 1024px) {
-	.thumbs {
-	  grid-template-columns: repeat(4, 1fr);
-	  margin-right: 2%;
-	}
-
-	.grid-text {
-		margin-left: 2%;
-	}
-
-  }
-
-  @media (max-width: 1126px) {
-	
-	.grid-text {
-		height: 90%;
-		gap: 3.875rem;
-		max-width: 38%;
-	}
-
-	.thumbs {
-		grid-template-columns: repeat(3, 1fr);
-	  }
-
-	  .about-text {
-		max-width: 52%;
-	  }
-
-	  .blue-box {
-		max-width: 40%;
-		margin-left: 0;
-	  }
-	
-  }
-
-  @media (max-width: 1023px) {
+@media (max-width: 1023px) {
 
 	.grid-text {
 		height: 84%;
@@ -258,10 +238,6 @@
 		gap: 1.5rem;
 	}
 
-	.about-text {
-		max-width: 54%;
-	  }
-
 	.grid-btn {
 		margin-top: 0;
 		gap: 2.875rem;
@@ -271,50 +247,16 @@
 		grid-template-columns: repeat(3, 1fr);
 		gap: 0.25rem;
 	  }
-	
-  }
+}
 
-  @media (max-width: 1005px) {
-
-	.grid-text h1 {
-		width: 101%;
-	}
-
-	.about-text {
-		max-width: 56%;
-	}
-
+@media (max-width: 1126px) {
 	.grid-text {
-		max-width: 40%;
+		height: 90%;
+		gap: 3.875rem;
+		max-width: 38%;
 	}
 
-	#grid {
-		gap: 0.5rem;
-	}
-
-  }
-
-  @media (max-width: 930px) {
-
-	.red-box {
-		max-width: 88%;
-		margin-left: 5%;
-	}
-
-	.blue-box {
-		max-width: 47%;
-	}
-
-	.about-text {
-		max-width: 66%;
-	}
-
-	.red-box h1 {
-		font-size: 4em;
-	}
-
-	.countdown-box {
-		max-width: 95%;
-	}
-
-  }
+	.thumbs {
+		grid-template-columns: repeat(3, 1fr);
+	  }
+}

@@ -532,7 +532,39 @@ ul {
 	}
 }
 
-/* 📱 Para celulares pequenos */
+
+
+/* 📱 RESPONSIVIDADE */
+
+@media (max-width: 375px) {
+
+	form {
+		width: 90%;
+		height: 76%;
+	}
+
+	.form-title {
+		font-size: 1.8rem;
+		margin-bottom: 12%;
+	}
+
+	.blue-box {
+		height: 18.1875rem;
+		width: 17.1875rem;
+		bottom: 3%;
+		left: 24%;
+	}
+
+	.red-box p {
+		font-size: 14px;
+		width: 83%;
+	}
+
+	.countdown-container {
+		height: 180%;
+	}
+}
+
 @media (max-width: 480px) {
 	/* ///////// Página inicial ///////// */
 
@@ -685,39 +717,55 @@ ul {
 	.container ul {
 		padding-left: 0;
 	}
-}
-
-/* 📱 Para celulares muito pequenos */
-@media (max-width: 375px) {
-	form {
-		width: 90%;
-		height: 76%;
-	}
-
-	.form-title {
-		font-size: 1.8rem;
-		margin-bottom: 12%;
-	}
-
-	.blue-box {
-		height: 18.1875rem;
-		width: 17.1875rem;
-		bottom: 3%;
-		left: 24%;
-	}
-
-	.red-box p {
-		font-size: 14px;
-		width: 83%;
-	}
-
-	.countdown-container {
-		height: 180%;
-	}
 
 }
+
+@media (max-width: 930px) {
+
+	.countdown-box {
+		max-width: 95%;
+	}
+
+  }
+
+  @media (max-width: 1005px) {
+
+	.about-text {
+		max-width: 56%;
+	}
+  }
+
+  @media (max-width: 1023px) {
+
+	.about-text {
+		max-width: 54%;
+	  }
+	
+  }
+
+/* 4 colunas para telas grandes (desktop) */
+/* @media (min-width: 1024px) {
+	.thumbs {
+	  grid-template-columns: repeat(4, 1fr);
+	  margin-right: 2%;
+	}
+
+	.grid-text {
+		margin-left: 2%;
+	}
+
+  } */
 
   @media (max-width: 1126px) {
+	
+	  .about-text {
+		max-width: 52%;
+	  }
+
+	  .blue-box {
+		max-width: 40%;
+		margin-left: 0;
+	  }
 
 	  .about-text {
 		max-width: 52%;
@@ -729,8 +777,36 @@ ul {
 	  }
 	
   }
+ 
+  @media (max-width: 1700px) {
+	.hero {
+			max-width: 96%;
+			left: 2%;
+	}
+  }
 
-@media (max-width: 1360px) {
+  @media (max-width: 1546px) {
+
+	.about-text {
+		max-width: 50%;
+	}
+   
+  }
+
+
+  @media (max-width: 1440px) {
+
+	.about-text {
+		max-width: 55%;
+	}
+
+	.blue-box {
+		max-width: 38%;
+    	margin-left: 0;
+	}
+  }
+
+  @media (max-width: 1360px) {
 	
 	.countdown-box {
 		max-width: 85%;
@@ -752,12 +828,68 @@ ul {
 	
   }
 
-  @media (max-width: 1700px) {
-	.hero {
-			max-width: 96%;
-			left: 2%;
+  @media (max-width: 1280px) {
+
+	.about-text {
+		max-width: 58%;
+	}
+
+	.blue-box {
+		max-width: 43%;
+        margin-left: 0;
+	}
+
+	.red-box h1 {
+		font-size: 4em;
 	}
   }
+
+  @media (max-width: 1024px) {
+
+	.red-box {
+		max-width: 96%;
+		margin-left: 2%;
+	}
+
+	.about-text {
+		max-width: 66%;
+	}
+
+	.blue-box {
+		max-width: 46%;
+        margin-left: 0;
+	}
+
+}
+
+  @media (max-width: 834px) {
+	.red-box {
+		max-width: 100%;
+		margin-left: 0%;
+	}
+
+	.blue-box {
+		max-width: 44%;
+		margin-left: 0;
+	}
+  }
+
+  @media (max-width: 768px) {
+
+	.red-box h1 {
+		font-size: 3.3em;
+	}
+	
+	.blue-box {
+		max-width: 40%;
+	}
+  }
+
+  @media (max-width: 600px) {
+
+  }
+
+ 
 
   
 
