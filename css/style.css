@@ -196,7 +196,6 @@
 	}
 
 	.thumbs {
-		grid-template-columns: repeat(3, 1fr);
 		gap: 0.25rem;
 	  }
 }
@@ -208,17 +207,118 @@
 	}
 
 	.grid-text {
-		max-width: 40%;
+		max-width: 38%;
+		gap: 4%;
+	}
+
+	.grid-btn {
+		width: 60%;
+	}
+
+	#grid {
+		gap: 2rem;
+	}
+
+	.thumbs > a {
+		max-width: 7.375rem;
+	}
+}
+
+@media (max-width: 834px) {
+
+	.hero h1 {
+		font-size: 3em;
 	}
 
 	#grid {
 		gap: 0.5rem;
 	}
+
+	.grid-text h1 {
+		font-size: 1.7rem;
+		width: 102%;
+	}
+
+	.grid-text > p {
+		font-size: 1rem;
+	}
 }
 
-@media (max-width: 834px) {
+@media (max-width: 768px) {
+
 	.thumbs {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
+		margin-right: 0;
+	  }
+
+	  .thumbs > a {
+		max-width: 7.7rem;
+	  }
+
+
+	  #grid {
+		height: 115%;
+		display: flex;
+		flex-direction: column;
+		gap: 2.5rem;
+	}
+
+	.grid-text {
+		max-width: 88%;
+		gap: 1.625rem;
+		height: 36%;
+		margin-left: 0;
+	}
+
+	.grid-text p {
+		font-size: 0.9375rem;
+	}
+
+	.grid-btn {
+		width: 100%;
+	}
+
+	.grid-text h1 {
+		font-size: 2em;
+	}
+}
+
+@media (max-width: 677px) {
+
+	.thumbs {
+		gap: 0;
+	  }
+
+	  .thumbs > a {
+		max-width: 7.3rem;
+	  }
+
+	  .grid-text {
+		max-width: 88%;
+		gap: 1.625rem;
+		height: 38%;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 570px) {
+
+	.grid-text {
+		max-width: 85%;
+		height: 37%;
+	}
+
+	#grid {
+		height: 140%;
+	}
+
+	.thumbs > a {
+		max-width: 7.9rem;
+	}
+
+	.thumbs {
+		grid-template-columns: repeat(3, 1fr);
 	  }
 }
 

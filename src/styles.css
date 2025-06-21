@@ -536,28 +536,13 @@ ul {
 
 /* 📱 RESPONSIVIDADE */
 
-@media (max-width: 930px) {
+/* @media (max-width: 930px) {
 
 	.countdown-box {
 		max-width: 95%;
 	}
 
-  }
-
-
-/* 4 colunas para telas grandes (desktop) */
-/* @media (min-width: 1024px) {
-	.thumbs {
-	  grid-template-columns: repeat(4, 1fr);
-	  margin-right: 2%;
-	}
-
-	.grid-text {
-		margin-left: 2%;
-	}
-
   } */
-
  
   @media (max-width: 1700px) {
 
@@ -574,12 +559,6 @@ ul {
 			left: 2%;
 	}
   }
-
-  @media (max-width: 1546px) {
-
-   
-  }
-
 
   @media (max-width: 1440px) {
 
@@ -668,6 +647,10 @@ ul {
         margin-left: 0;
 	}
 
+	.countdown-box {
+		max-width: 95%;
+	}
+
 }
 
   @media (max-width: 834px) {
@@ -684,6 +667,15 @@ ul {
 		max-width: 44%;
 		margin-left: 0;
 	}
+
+	.testimonials-box img {
+		width: 19.313rem;
+    	height: 19.313rem;
+	}
+
+	.countdown-box {
+		max-width: 100%;
+	}
   }
 
   @media (max-width: 768px) {
@@ -695,7 +687,65 @@ ul {
 	.blue-box {
 		max-width: 40%;
 	}
+
+	.about-btn {
+		max-width: 100%;
+	}
+
+	/* ///////// Ofertas ///////// */
+
+	.countdown-box {
+		width: 96%;
+		padding: 1.25rem;
+		flex-direction: column;
+	}
+
+	.countdown-container img {
+		width: 14.5rem;
+		height: 40%;
+	}
+
+	.countdown-container {
+		height: 128%;
+	}
+
+	.sale {
+		width: 100%;
+	}
+
+	.sale-title {
+		margin-top: 6%;
+		margin-bottom: 13%;
+	}
+
+	.text-countdown {
+		width: 100%;
+	}
+
+	.text-countdown h1 {
+		margin-top: 5%;
+	}
+
+	/* ///////// Testimonials ///////// */
+
+	.testimonials-box {
+		height: 25.25rem;
+	}
+	
+	.testimonials-box img {
+		width: 8.313rem;
+        height: 8.313rem;
   }
+
+  	.swiper-slide {
+		font-size: 1em;
+  }
+
+  	.swiper2 {
+		width: 94%;
+  }
+
+}
 
   @media (max-width: 600px) {
 
@@ -707,12 +757,23 @@ ul {
 		padding: 30px;
 	}
 
-	.about-btn {
-		max-width: 60%;
-	}
-
 	#about {
 		padding: 0.6rem;
+	}
+
+	.countdown-container img {
+		width: 13.5rem;
+	}
+  }
+
+  @media (max-width: 570px) {
+
+	.red-box h1 {
+		font-size: 2.5em;
+	}
+
+	.red-box p {
+		font-size: 0.9375em;
 	}
   }
 
