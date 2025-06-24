@@ -783,8 +783,8 @@ ul {
 	/* ///////// Página inicial ///////// */
 
 	form {
-		max-width: 88%;
-		height: 60%;
+		max-width: 90%;
+		height: 33rem;
 		padding: 1.25rem;
 		border-radius: 10px;
 	}
@@ -801,18 +801,23 @@ ul {
 	/* ///////// Hero section ///////// */
 
 	.swiper-slide img {
-		height: 42rem;
+		height: 50rem;
 	}
 
 	.hero {
 		max-height: 82%;
         max-width: 95%;
-		top: 12%;
+		top: 17%;
 		left: 2%;
 	}
 
 	.hero-title {
 		font-size: 2.7em;
+	}
+
+	.hero-content p {
+		width: 100%;
+		margin-left: 0;
 	}
 
 	.swiper-pagination-clickable .swiper-pagination-bullet {
@@ -827,11 +832,14 @@ ul {
 	/* ///////// About Us ///////// */
 
 	#about-section {
-		height: 98%;
+		height: 54rem;
+	    margin-top: 4rem;
 	}
 
 	.about-title {
-		margin-top: 5%;
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 2em;
 	}
 
 	.about-text {
@@ -844,14 +852,14 @@ ul {
 		display: flex;
         flex-direction: column;
 		height: 20.875rem;
-		width: 23.25rem;
+		width: 26.25rem;
 		margin: auto;
 	}
 
 	.blue-box {
 		max-width: 100%;
 		height: 20.1875rem;
-		margin-top: 15%;
+		margin-top: 2rem;
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
 	}
@@ -880,7 +888,7 @@ ul {
 
 	.testimonials-box {
 		height: 22.6875rem;
-		width: 24.6875rem;
+		width: 25.6875rem;
 		align-items: flex-start;
 		padding: 4.0625rem 3.6875rem 0 1.4375rem;
 		border-radius: 10px;
@@ -913,7 +921,7 @@ ul {
 	}
 
 	.countdown-container {
-		height: 128%;
+		height: 80rem;
 	}
 
 	.sale {
@@ -944,25 +952,20 @@ ul {
 @media (max-width: 375px) {
 
 	form {
-		width: 90%;
-		height: 76%;
+		width: 95%;
 	}
 
 	.form-title {
-		font-size: 1.8rem;
+		font-size: 1.8em;
 		margin-bottom: 12%;
 	}
 
-	.blue-box {
-		height: 18.1875rem;
-		width: 17.1875rem;
-		bottom: 3%;
-		left: 24%;
+	.hero {
+		top: 12%;
 	}
 
-	.red-box p {
-		font-size: 14px;
-		width: 83%;
+	.hero-image {
+		height: 58rem;
 	}
 
 	.countdown-container {
