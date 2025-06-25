@@ -2,8 +2,6 @@
 
 #grid {
 	width: 100%;
-	height: 85%;
-	margin-top: 1.563rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -22,6 +20,8 @@
 	border: 1px solid #000;
 	font-weight: 400;
 	cursor: pointer;
+	/* margin-top: 8rem;
+    margin-bottom: 1rem; */
 }
 
 .grid-btn:hover {
@@ -31,7 +31,7 @@
 
 .grid-text {
 	max-width: 35%;
-	height: 34.0625rem;
+	/* height: 34rem; */
 	padding: 1.875rem;
 	display: flex;
 	flex-direction: column;
@@ -41,6 +41,8 @@
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 	background-color: #fff;
 	margin-left: 2%;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
 }
 
 .grid-text > p {
@@ -50,9 +52,10 @@
 .thumbs {
 	max-width: 100%;
 	display: grid;
-	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 	grid-template-columns: repeat(4, 1fr);
 	margin-right: 2%;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 	gap: 1.25rem;
 }
 .thumbs > a {
@@ -167,7 +170,7 @@
 @media (max-width: 1126px) {
 
 	.grid-text {
-		height: 90%;
+		height: 44.75rem;
 		gap: 3.875rem;
 		max-width: 38%;
 	}
@@ -180,7 +183,7 @@
 @media (max-width: 1024px) {
 
 	.grid-text {
-		height: 84%;
+		height: 42.6875rem;
 	}
 
 	#grid {
@@ -232,12 +235,12 @@
 	}
 
 	.grid-text h1 {
-		font-size: 1.7rem;
+		font-size: 1.7em;
 		width: 102%;
 	}
 
 	.grid-text > p {
-		font-size: 1rem;
+		font-size: 1em;
 	}
 }
 
@@ -247,6 +250,7 @@
 		grid-template-columns: repeat(4, 1fr);
 		gap: 1rem;
 		margin-right: 0;
+		margin-top: 0;
 	  }
 
 	  .thumbs > a {
@@ -255,7 +259,7 @@
 
 
 	  #grid {
-		height: 115%;
+		/* height: 77.625rem; */
 		display: flex;
 		flex-direction: column;
 		gap: 2.5rem;
@@ -264,12 +268,13 @@
 	.grid-text {
 		max-width: 88%;
 		gap: 1.625rem;
-		height: 36%;
+		height: 24.25rem;
 		margin-left: 0;
+		margin-bottom: 0;
 	}
 
 	.grid-text p {
-		font-size: 0.9375rem;
+		font-size: 0.9375em;
 	}
 
 	.grid-btn {
@@ -294,7 +299,7 @@
 	  .grid-text {
 		max-width: 88%;
 		gap: 1.625rem;
-		height: 38%;
+		height: 25.625rem;
 		margin-left: 0;
 	}
 }
@@ -303,11 +308,7 @@
 
 	.grid-text {
 		max-width: 85%;
-		height: 37%;
-	}
-
-	#grid {
-		height: 140%;
+		height: 24.9375rem;
 	}
 
 	.thumbs > a {
@@ -331,7 +332,7 @@
     }
 
 	#grid {
-		height: 110rem;
+		/* height: 110rem; */
 		display: flex;
 		flex-direction: column;
 	}
@@ -342,12 +343,13 @@
 	}
 
 	.grid-text p {
-		font-size: 0.9375rem;
+		font-size: 0.9375em;
 	}
 
 }
 
 @media (max-width: 375px) {
+
 	#grid {
 		display: flex;
 		flex-direction: column;
