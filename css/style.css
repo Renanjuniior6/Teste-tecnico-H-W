@@ -20,8 +20,6 @@
 	border: 1px solid #000;
 	font-weight: 400;
 	cursor: pointer;
-	/* margin-top: 8rem;
-    margin-bottom: 1rem; */
 }
 
 .grid-btn:hover {
@@ -31,12 +29,11 @@
 
 .grid-text {
 	max-width: 35%;
-	/* height: 34rem; */
 	padding: 1.875rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	gap: 1.875rem;
+	gap: 4.875rem;
 	border-radius: 10px;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 	background-color: #fff;
@@ -75,6 +72,7 @@
 	max-width: 100%;
 	max-height: 100%;
 	width: 200px;
+	object-fit: cover;
 }
 .thumbs > a:hover img {
 	transform: scale(1.1);
@@ -170,8 +168,7 @@
 @media (max-width: 1126px) {
 
 	.grid-text {
-		height: 44.75rem;
-		gap: 3.875rem;
+		gap: 5.875rem;
 		max-width: 38%;
 	}
 
@@ -181,10 +178,6 @@
 }
 
 @media (max-width: 1024px) {
-
-	.grid-text {
-		height: 42.6875rem;
-	}
 
 	#grid {
 		gap: 0.5rem;
@@ -212,7 +205,7 @@
 
 	.grid-text {
 		max-width: 38%;
-		gap: 4%;
+		gap: 4rem;
 	}
 
 	.grid-btn {
@@ -259,7 +252,6 @@
 
 
 	  #grid {
-		/* height: 77.625rem; */
 		display: flex;
 		flex-direction: column;
 		gap: 2.5rem;
@@ -268,7 +260,6 @@
 	.grid-text {
 		max-width: 88%;
 		gap: 1.625rem;
-		height: 24.25rem;
 		margin-left: 0;
 		margin-bottom: 0;
 	}
@@ -299,7 +290,6 @@
 	  .grid-text {
 		max-width: 88%;
 		gap: 1.625rem;
-		height: 25.625rem;
 		margin-left: 0;
 	}
 }
@@ -308,7 +298,6 @@
 
 	.grid-text {
 		max-width: 85%;
-		height: 24.9375rem;
 	}
 
 	.thumbs > a {
@@ -332,14 +321,12 @@
     }
 
 	#grid {
-		/* height: 110rem; */
 		display: flex;
 		flex-direction: column;
 	}
 
 	.grid-text {
 		max-width: 94%;
-        height: 31rem;
 	}
 
 	.grid-text p {
