@@ -33,8 +33,7 @@ html {
 }
 
 #content img {
-	max-width: 498px;
-    max-height: 810px;
+	max-width: 32.6rem;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
@@ -42,12 +41,11 @@ html {
 form {
 	background-color: #fff;
 	padding: 0.625rem 1.25rem;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	max-width: 42%;
-    max-height: 85%;
-	padding: 1.25rem;
+	/* max-width: 42%;
+    max-height: 85%; */
+	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -178,27 +176,38 @@ form {
 	max-width: 100vw;
 	max-height: 100vh;
 	position: relative;
+
+	
 }
-/* 
-.swiper-wrapper {
+
+.mySwiper {
 	text-align: center;
 	font-size: 1.125rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-} */
+}
 
 #hero-section {
-	height: 42rem;
+	height: 48rem;
+	width: 100%;
+	background-color: orange;
 }
+
+/* .swiper-slide {
+	width: 100%;
+} */
 
 .hero-image img {
 	display: block;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	
 }
+
+/* .hero-image {
+	width: 100%;
+} */
 
 /*         About            */
 
@@ -619,6 +628,22 @@ ul {
 
   @media (max-width: 1024px) {
 
+	form {
+		width: 64%;
+		height: 37rem;
+		padding: 1.25rem;
+		border-radius: 10px;
+	}
+
+	.form-title {
+		font-size: 2rem;
+		margin-bottom: 9%;
+	}
+
+	#content img {
+		display: none;
+	}
+
 	.red-box {
 		max-width: 96%;
 		margin-left: 2%;
@@ -674,6 +699,11 @@ ul {
   }
 
   @media (max-width: 768px) {
+
+	form {
+		width: 75%;
+		height: 36rem;
+	}
 
 	.red-box h1 {
 		font-size: 3.3em;
@@ -740,6 +770,11 @@ ul {
 
   @media (max-width: 600px) {
 
+	form {
+		width: 85%;
+		height: 34rem;
+	}
+
 	.red-box h1 {
 		font-size: 3em;
 	}
@@ -780,7 +815,7 @@ ul {
 	}
 
 	.form-title {
-		font-size: 2rem;
+		font-size: 1.7em;
 		margin-bottom: 9%;
 	}
 
@@ -942,7 +977,7 @@ ul {
 	}
 
 	.form-title {
-		font-size: 1.8em;
+		font-size: 1.6em;
 		margin-bottom: 12%;
 	}
 
