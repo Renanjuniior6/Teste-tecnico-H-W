@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root {
+	--bs-navbar-brand-font-size: 2.25rem;
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -65,6 +69,10 @@ form {
 
 /*         Sticky Header            */
 
+/* .navbar {
+	font-size: var(--bs-navbar-brand-font-size);
+} */
+
 .navbar {
 	position: sticky !important;
 	top: 0;
@@ -85,10 +93,6 @@ form {
 
 .dropdown-toggle:hover {
 	color: #be986d !important;
-}
-
-.custom-navbar {
-	background-color: #ff5733 !important; /* Cor personalizada */
 }
 
 .navbar-brand {
@@ -191,7 +195,6 @@ form {
 #hero-section {
 	height: 48rem;
 	width: 100%;
-	background-color: orange;
 }
 
 /* .swiper-slide {
@@ -471,7 +474,7 @@ ul {
 	padding: 0 0.938rem;
 }
 .footer-col h4 {
-	font-size: 1.125;
+	font-size: 1.125em;
 	color: #ffffff;
 	text-transform: capitalize;
 	margin-bottom: 2.188rem;
@@ -492,7 +495,7 @@ ul {
 	margin-bottom: 0.625rem;
 }
 .footer-col ul li a {
-	font-size: 1rem;
+	font-size: 1em;
 	text-transform: capitalize;
 	color: #ffffff;
 	text-decoration: none;
@@ -538,14 +541,6 @@ ul {
 
 
 /* 📱 RESPONSIVIDADE */
-
-/* @media (max-width: 930px) {
-
-	.countdown-box {
-		max-width: 95%;
-	}
-
-  } */
  
   @media (max-width: 1700px) {
 
@@ -908,7 +903,8 @@ ul {
 	}
 
 	#testimonials {
-		margin-bottom: 15%;
+		margin-bottom: 10%;
+        margin-top: 10%;
 	}
 
 	.testimonials-box {
@@ -963,6 +959,14 @@ ul {
 	}
 
 	/* ///////// Footer ///////// */
+
+	.footer-col ul li a {
+		font-size: 0.825em;
+	}
+
+	.footer-col h4 {
+		font-size: 1em;
+	}
 
 	.container ul {
 		padding-left: 0;
