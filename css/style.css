@@ -3,7 +3,6 @@
 #grid {
 	width: 100%;
 	display: flex;
-	/* align-items: center; */
 	justify-content: center;
 	gap: 2.5rem;
 	background-color: aliceblue;
@@ -172,7 +171,6 @@
 @media (max-width: 1126px) {
 
 	.grid-text {
-		/* gap: 5.875rem; */
 		max-width: 38%;
 	}
 
@@ -209,7 +207,6 @@
 
 	.grid-text {
 		max-width: 38%;
-		/* gap: 4rem; */
 	}
 
 	#grid {
@@ -307,7 +304,7 @@
 
 	.thumbs {
 		grid-template-columns: repeat(2, minmax(10.625rem, 1fr));
-		gap: 1.25rem;
+		gap: 1.2rem;
 	}
 
 	.thumbs > a {
@@ -334,5 +331,9 @@
 	#grid {
 		display: flex;
 		flex-direction: column;
+	}
+
+	.thumbs {
+		gap: 0.2rem;
 	}
 }
